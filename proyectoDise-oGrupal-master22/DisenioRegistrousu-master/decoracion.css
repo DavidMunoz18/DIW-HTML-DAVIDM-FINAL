@@ -1,0 +1,333 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.encabezado .iconos-sociales i {
+    margin: 0 10px;
+}
+.encabezado .info-contacto {
+    display: flex;
+    align-items: center;
+}
+.encabezado .info-contacto span {
+    margin-left: 20px;
+}
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.barra-navegacion .izquierda {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+.barra-navegacion .derecha {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.barra-navegacion .derecha a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+.carrusel img {
+    width: 100%;
+    height: auto;
+}
+.carrusel .subtitulo {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+.carrusel .puntos {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.carrusel .puntos span {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-block;
+}
+.seccion-informacion {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+.tarjeta-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 20%;
+}
+.tarjeta-info i {
+    font-size: 2em;
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+.tarjeta-info h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+.tarjeta-info p {
+    color: gray;
+}
+.input-boton-container {
+    display: flex;
+    flex-direction: column; /* Alinea el input y el botón en columna */
+    width: 100%;
+    max-width: 600px; /* Controla el ancho máximo */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .grupo {
+    margin-bottom: 20px;
+  }
+  
+  .etiqueta {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .input-text {
+    width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  }
+  
+  .boton-enviar {
+    width: 100%; /* Hace que el botón ocupe el 100% del ancho disponible */
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .boton-enviar:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+  }
+  
+
+
+.login {
+    margin: 0;
+    color: #6a6f8c;
+    background: url('imagenes/pexels-pixabay-163210.jpg') no-repeat center center fixed;
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    font: 600 16px/18px 'Open Sans', sans-serif;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.envoltura-login {
+    width: 100%;
+    margin: auto;
+    max-width: 525px;
+    min-height: 670px;
+    position: relative;
+    background: rgba(50, 50, 50, 0.8); /* Fondo gris oscuro con opacidad del 80% */
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido se recorte dentro de los bordes redondeados */
+}
+
+.html-login {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+    background: rgba(32, 35, 43, 0.4); /* Fondo oscuro más transparente (40% opaco) */
+}
+
+.html-login .iniciar-sesion-html,
+.html-login .registrarse-html {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	transition: all .4s linear;
+}
+.html-login .iniciar-sesion,
+.html-login .registrarse,
+.formulario-login .grupo .verificar {
+	display: none;
+}
+.html-login .pestaña,
+.formulario-login .grupo .etiqueta,
+.formulario-login .grupo .boton {
+	text-transform: uppercase;
+}
+.html-login .pestaña {
+	font-size: 22px;
+	margin-right: 15px;
+	padding-bottom: 5px;
+	margin: 0 15px 10px 0;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+.html-login .iniciar-sesion:checked + .pestaña,
+.html-login .registrarse:checked + .pestaña {
+	color: #fff;
+	border-color: #1161ee;
+}
+.formulario-login {
+	min-height: 345px;
+	position: relative;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+.formulario-login .grupo {
+	margin-bottom: 15px;
+}
+.formulario-login .grupo .etiqueta,
+.formulario-login .grupo .entrada,
+.formulario-login .grupo .boton {
+	width: 100%;
+	color: #fff;
+	display: block;
+}
+.formulario-login .grupo .entrada,
+.formulario-login .grupo .boton {
+	border: none;
+	padding: 15px 20px;
+	border-radius: 25px;
+	background: rgba(255, 255, 255, .1);
+}
+.formulario-login .grupo input[data-type="password"] {
+	-webkit-text-security: circle;
+}
+.formulario-login .grupo .etiqueta {
+	color: #aaa;
+	font-size: 12px;
+}
+.formulario-login .grupo .boton {
+	background: #1161ee;
+}
+.formulario-login .grupo label .icono {
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	position: relative;
+	display: inline-block;
+	background: rgba(255, 255, 255, .1);
+}
+.formulario-login .grupo label .icono:before,
+.formulario-login .grupo label .icono:after {
+	content: '';
+	width: 10px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	transition: all .2s ease-in-out 0s;
+}
+.formulario-login .grupo label .icono:before {
+	left: 3px;
+	width: 5px;
+	bottom: 6px;
+	transform: scale(0) rotate(0);
+}
+.formulario-login .grupo label .icono:after {
+	top: 6px;
+	right: 0;
+	transform: scale(0) rotate(0);
+}
+.formulario-login .grupo .verificar:checked + label {
+	color: #fff;
+}
+.formulario-login .grupo .verificar:checked + label .icono {
+	background: #1161ee;
+}
+.formulario-login .grupo .verificar:checked + label .icono:before {
+	transform: scale(1) rotate(45deg);
+}
+.formulario-login .grupo .verificar:checked + label .icono:after {
+	transform: scale(1) rotate(-45deg);
+}
+.html-login .iniciar-sesion:checked + .pestaña + .registrarse + .pestaña + .formulario-login .iniciar-sesion-html {
+	transform: rotate(0);
+}
+.html-login .registrarse:checked + .pestaña + .formulario-login .registrarse-html {
+	transform: rotate(0);
+}
+
+.hr {
+	height: 2px;
+	margin: 60px 0 50px 0;
+	background: rgba(255, 255, 255, .2);
+}
+.enlace-pie {
+	text-align: center;
+}
+
+

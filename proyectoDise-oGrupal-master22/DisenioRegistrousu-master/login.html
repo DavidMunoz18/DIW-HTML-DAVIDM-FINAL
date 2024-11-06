@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="decoracion.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="login">
+    <br><br>
+    <div class="envoltura-login">
+        <div class="html-login">
+            <input id="pestaña-1" type="radio" name="pestaña" class="iniciar-sesion" checked>
+            <label for="pestaña-1" class="pestaña">Iniciar Sesión</label>
+            <input id="pestaña-2" type="radio" name="pestaña" class="registrarse">
+            
+            <label for="pestaña-2" class="pestaña">Registrarse</label>
+            <div class="formulario-login">
+
+                <form id="login-form">
+                    <div class="iniciar-sesion-html">
+                        <div class="grupo">
+                            <label for="club" class="etiqueta">Club</label>
+                            <input id="club" type="text" class="entrada" maxlength="18">
+                        </div>
+                        <div class="grupo">
+                            <label for="contraseña" class="etiqueta">Contraseña</label>
+                            <input id="contrasenia" type="password" class="entrada" data-type="password">
+                        </div>
+                        <div class="grupo">
+                            <br>
+                            <input id="mantener" type="checkbox" class="verificar" checked>
+                            <label for="mantener"><span class="icono"></span> Mantenerme conectado</label>
+                        </div>
+                        <div class="grupo">
+                            <input type="submit" class="boton" value="Iniciar Sesión">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="enlace-pie">
+                            <a href="#olvido">¿Olvidaste tu contraseña?</a> 
+                        </div>
+                    </div>
+                </form>
+
+                <form id="registro-club" method="POST">
+                    <div class="registrarse-html">
+                        <div class="grupo">
+                            <label for="clubR" class="etiqueta">Club</label>
+                            <input id="clubR" type="text" class="entrada" maxlength="18">
+                        </div>
+                        <div class="grupo">
+                            <label for="contraseña" class="etiqueta">Contraseña</label>
+                            <input id="contraseña2" type="password" class="entrada" data-type="password">
+                        </div>
+                        <div class="grupo">
+                            <label for="repetir-contraseña" class="etiqueta">Repetir Contraseña</label>
+                            <input id="repetir-contraseña" type="password" class="entrada" data-type="password">
+                        </div>
+                        <div class="grupo">
+                            <label for="correo" class="etiqueta">Dirección de Correo</label>
+                            <input id="correo" type="email" class="entrada">
+                        </div>
+                        <div class="grupo">
+                            <button id="botonAniadir" type="submit" class="boton" value="Registrarse">Registrarse</button>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="enlace-pie">
+                            <label for="pestaña-1">¿Ya eres miembro?</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
+

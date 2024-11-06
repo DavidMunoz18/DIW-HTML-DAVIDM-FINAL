@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Club de Motos</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="decoracion.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="encabezado">
+      <div class="iconos-sociales">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="info-contacto">
+        <span>+34 612 326 261</span>
+        <span>DAJ@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="barra-navegacion">
+      <div class="izquierda">DAJ</div>
+      <div class="derecha">
+        <a href="#">Servicios</a>
+        <a href="#">Usuarios</a>
+        <a href="#">Clubs</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+
+    <div class="carrusel">
+      <img
+        alt="Vista panorámica de motocicletas en una carretera de montaña"
+        height="400"
+        src="https://storage.googleapis.com/a1aa/image/hU4O9VDsYT57FNlfm79WJSo2tDsztoFkYuCxMeOTpx4FFUqTA.jpg"
+        width="800"
+      />
+      <div class="subtitulo">Bienvenidos al Club de Motos</div>
+      <div class="puntos">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="seccion-informacion">
+      <div class="tarjeta-info" id="tarjetaInfo1">
+        <i class="fas fa-motorcycle"></i>
+        <h3>Paseos en Moto</h3>
+        <p>Únete a nuestros paseos semanales</p>
+      </div>
+      <div class="tarjeta-info">
+        <i class="fas fa-comments"></i>
+        <h3>Soporte Online</h3>
+        <p>Escríbenos por WhatsApp todas las dudas</p>
+      </div>
+      <div class="tarjeta-info">
+        <i class="fas fa-clock"></i>
+        <h3>Nuestros Horarios</h3>
+        <p>Lunes a Viernes de 08:00 hs a 20:00 hs</p>
+      </div>
+      <div class="tarjeta-info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Donde Estamos</h3>
+        <p>Av Juan B. Justo 743 Barrio Centro, Córdoba</p>
+      </div>
+    </div>
+
+    <form class="input-boton-container" id="input-boton-container">
+      <div class="grupo">
+        <label for="borrarV" class="etiqueta">Escribe el nombre del club seguido de "/Borrar" para eliminarlo:</label>
+        <input
+          id="borrarV"
+          type="text"
+          placeholder="Ejemplo: nombreClub/Borrar"
+          class="input-text"
+        />
+      </div>
+      <button id="botonD" class="boton-enviar" disabled>Borrar</button>
+    </form>
+    
+
+    <script src="java.js"></script>
+    <script>
+    </script>
+  </body>
+</html>
